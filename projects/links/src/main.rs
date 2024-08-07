@@ -12,15 +12,15 @@ fn main() {
     let mut some_text = String::from("text");
 
     let l1 = &some_text;
-    let l2 = &some_text;
-    
+    let l2 = &some_text; 
+    let l3 = &mut some_text;   
 
     println!("l1 - {l1}, l2 - {l2}");
+    
 
     println!("second print:");
     println!("l1 - {l1}, l2 - {l2}");
-    let l3 = &mut some_text;
-    println!("{l3}");
+
 }
 
 fn line_size(s: &String) -> usize {
