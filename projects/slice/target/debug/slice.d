@@ -1,1 +1,1 @@
-Z:\Cyrill\Programming\ Rust\projects\slice\target\debug\slice.exe: Z:\Cyrill\Programming\ Rust\projects\slice\src\main.rs
+/Users/polchasa/Документы/rust/projects/slice/target/debug/slice: /Users/polchasa/Документы/rust/projects/slice/src/main.rs
