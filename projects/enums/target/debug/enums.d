@@ -1,1 +1,1 @@
-Z:\Cyrill\Programming\ Rust\projects\enums\target\debug\enums.exe: Z:\Cyrill\Programming\ Rust\projects\enums\src\main.rs
+/Users/polchasa/Документы/rust/projects/enums/target/debug/enums: /Users/polchasa/Документы/rust/projects/enums/src/main.rs
