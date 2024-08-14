@@ -53,8 +53,43 @@ fn value_in_cents_3 (coin: Coins2) -> u8 {
     }
 }
 //Пример 3 - конец
+//Пример 4 - начало
+fn plus_one(x: Option<i32>) -> Option<i32> { //функция ожидает от нас переменную с типом Option<i32>
+    match x { //Проверяем тип
+        None => None, //Если встречен None его и возращаем
+        Some(i) => Some(i + 1), //Если встречен тип Option<i32>, берем значение этой переменной 
+                                     //Добавим еденицу и вернем это значение из функции
+    }
+} 
+//Пример 4 - конец
 fn main() {
     println!("{}", value_in_cents(Coins::Nickel));
     value_in_cents_2(Coins::Penny);
-    value_in_cents_3(Coins2::Quarter(States::Alabama));    
+    value_in_cents_3(Coins2::Quarter(States::Alabama));   
+    println!("{:?}", plus_one(Some(5))); 
+    println!("{:?}", plus_one(None)); 
+    //Пример 5 - начало
+    let dice_roll = 9;    
+    match dice_roll {
+        7 => println!("have hat"),
+        3 => println!("hat out"),
+        other => println!("player pos changed on {}", other),
+    }
+    //Пример 5 - конец
+    //Пример 6 - начало
+    let dice_roll = 9;    
+    match dice_roll {
+        7 => println!("have hat"),
+        3 => println!("hat out"),
+        _ => println!("Roll again!!!"),
+    }
+    //Пример 6 - конец
+    //Пример 7 - начало
+    let dice_roll = 9;    
+    match dice_roll {
+        7 => println!("have hat"),
+        3 => println!("hat out"),
+        _ => (),
+    }
+    //Пример 7 - конец
 }
